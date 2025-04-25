@@ -4,13 +4,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Archytas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="css/styles.css"/>
 </head>
 <body>
   <header>
-    <img src="images/logo.png" alt="Archytas Logo" class="logo"/>
+    <a href="#" class="logo">
+      <img src="images/logo.png" alt="Archytas Logo">
+    </a>
     <nav>
       <ul>
+        <li><a href="#hero">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -19,8 +23,11 @@
   </header>
 
   <section id="hero">
-    <h1>Archytas</h1>
-    <p>Innovation through geometric insight.</p>
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>Archytas Energy</h1>
+      <!-- <a href="#services" class="btn-primary">Randffom</a> -->
+    </div>
   </section>
 
   <section id="about">
@@ -30,16 +37,30 @@
 
   <section id="services">
     <h2>Services</h2>
-    <ul>
-      <li>Computational Geometry</li>
-      <li>Algorithm Design</li>
-      <li>Consulting & Research</li>
-    </ul>
+    <div class="services-grid">
+      <div class="service-card">
+        <h3>Computational Geometry</h3>
+        <p>Geometric algorithm development for complex spatial analyses.</p>
+      </div>
+      <div class="service-card">
+        <h3>Algorithm Design</h3>
+        <p>Optimized algorithmic solutions for performance-critical applications.</p>
+      </div>
+      <div class="service-card">
+        <h3>Consulting & Research</h3>
+        <p>Expert guidance bridging theory and practical implementation.</p>
+      </div>
+    </div>
   </section>
 
   <section id="contact">
     <h2>Contact</h2>
-    <p>Email: <a href="mailto:info@archytas.example.com">info@archytas.example.com</a></p>
+    <form class="contact-form">
+      <input type="text" placeholder="Name" required/>
+      <input type="email" placeholder="Email" required/>
+      <textarea rows="5" placeholder="Message" required></textarea>
+      <button type="submit" class="btn-secondary">Send Message</button>
+    </form>
   </section>
 
   <footer>
